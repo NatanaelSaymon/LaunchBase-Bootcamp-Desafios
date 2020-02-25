@@ -1,0 +1,1 @@
+Repositório criado para postagem de desafios relacionados ao curso Launchbase desenvolvido pela Rocketseat.
