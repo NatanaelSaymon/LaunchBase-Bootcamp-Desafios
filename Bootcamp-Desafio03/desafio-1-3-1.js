@@ -13,22 +13,13 @@
 // Tuane trabalha com HTML, Node.js
 
 const usuarios = [
-    {
-        nome: "Natanael Saymon",
-        tecnologia: ["HTML", " CSS!"]
-    },
-    {
-        nome: "Suellen Souza",
-        tecnologia: ["Javascript", " Node.js!"]
-    },
-    {
-        nome: "Cacau Souza",
-        tecnologia: ["Bootstrap", " Materialize!"]
-    }
+    { nome: "Natanael Saymon", tecnologias: ["HTML", "CSS"] },
+    { nome: "Suellen Souza", tecnologias: ["Javascript", " Node.js", "CSS"] },
+    { nome: "Cacau Souza", tecnologias: ["Bootstrap", "Materialize"] }
 ]
 
 for(let c in usuarios){
-    console.log(`${usuarios[c].nome} trabalha com ${usuarios[c].tecnologia}`)
+    console.log(`${usuarios[c].nome} trabalha com ${usuarios[c].tecnologia.join(', ')}`)
 }
 
 

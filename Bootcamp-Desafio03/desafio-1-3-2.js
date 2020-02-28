@@ -24,44 +24,25 @@
 // }
 
 const usuarios = [
-    {
-        nome: "Natanael Saymon",
-        tecnologias: ["HTML", "CSS"]
-    },
-    {
-        nome: "Suellen Souza",
-        tecnologias: ["Javascript", " Node.js", "CSS"]
-    },
-    {
-        nome: "Cacau Souza",
-        tecnologias: ["Bootstrap", "Materialize"]
-    },
-    {
-        nome: "Mateus",
-        tecnologias: ["Java", "Android"]
-    },
-    {
-        nome: "Pedro",
-        tecnologias: ["Python", "Vue.js"]
-    },
-    {
-        nome: "João",
-        tecnologias: ["Ruby", "CSS"]
-    }
+    { nome: "Natanael Saymon", tecnologias: ["HTML", "CSS"] },
+    { nome: "Suellen Souza", tecnologias: ["Javascript", " Node.js", "CSS"] },
+    { nome: "Cacau Souza", tecnologias: ["Bootstrap", "Materialize"] }
 ]
 
 for(let usuario of usuarios){
-    console.log(`O usuario ${usuario.nome}, trabalha com a(s) tecnologia(s): ${usuario.tecnologias.join(', ')}`)
+    console.log(`O usuario ${usuario.nome}, trabalha com a(s) tecnologia(s): ${usuario.tecnologias.join(', ')}`) 
+    //join(', ') define como o conteudo vai ser sepado
 }
 
 // function para buscar tecnologia
 function checaSeUsuarioUsaCSS(usuario){
     for(let tecnologia of usuario.tecnologias){
-        if(tecnologia == 'CSS') return true
+        if(tecnologia == 'CSS'){
+            return true
+        } 
     }
     return false
 }
-
 
 for(let i = 0; i < usuarios.length; i++){
     const usuarioTrabalhaComCSS = checaSeUsuarioUsaCSS(usuarios[i])
