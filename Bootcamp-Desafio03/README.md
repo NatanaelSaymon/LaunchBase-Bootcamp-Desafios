@@ -17,6 +17,8 @@ Percorra a lista de usuários com uma estrutura de repetição imprimindo em tel
 Carlos trabalha com HTML, CSS
 Jarmine trabalha com JavaScript, CSS
 Tuane trabalha com HTML, Node.js
+
+
 Busca por tecnologia
 Baseado no desafio anterior, utilize a mesma lista de usuários construída.
 
@@ -37,7 +39,10 @@ for (let i = 0; i < usuarios.length; i++) {
     console.log(`O usuário ${usuario[i].nome} trabalha com CSS`);
   }
 }
+
+
 Soma de despesas e receitas
+
 Crie um programa que calcula a soma de receitas e despesas de usuários e no fim retorna o saldo (receitas - despesas).
 
 Utilize o array de usuários abaixo:

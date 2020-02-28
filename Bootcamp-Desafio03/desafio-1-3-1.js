@@ -20,6 +20,7 @@ const usuarios = [
 
 for(let c in usuarios){
     console.log(`${usuarios[c].nome} trabalha com ${usuarios[c].tecnologia.join(', ')}`)
+    //join(', ') define como o conteudo vai ser sepado
 }
 
 
