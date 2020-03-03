@@ -31,7 +31,7 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 
 Desafio 2-2: Página de descrição
 
-🚀 Sobre o desafio
+🚀 Sobre o desafio.
 
 “Quanto mais você estuda, mais aprende e se aproxima de realizar seu sonhos!”
 
