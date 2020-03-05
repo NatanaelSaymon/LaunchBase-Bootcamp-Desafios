@@ -106,4 +106,69 @@ p {
 }
 
 /*=== Style Pag Conteudo ===*/
+.cursos{
+    max-width: 1400px;
+    min-height: 84vh;
+    margin: 0 auto; /*para centralizar*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
 
+.container-cursos{
+    background-image: url('/imagens/back.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.curso-number{
+    margin: 70px 0;
+}
+
+.curso-img{
+    margin-bottom: 50px;
+}
+
+.img-starter, .img-gostack{
+    width: 120px; 
+    height: 120px;
+}
+
+.img-launch{
+    width: 212px; 
+    height: 133px;
+    margin-top: -14px;
+}
+
+/*Cor de cada classe*/
+.starter{
+    font-weight: bold;
+    color: var(--color-efeito);
+}
+.launch{
+    font-weight: bold;
+    color: #FD951F;
+}
+.gostack{
+    font-weight: bold;
+    color: #04D361;
+}
+
+/*Efeito hover*/
+#starter:hover{
+    border: 2px solid var(--color-efeito);
+}
+#launch:hover{
+    border: 2px solid #FD951F;
+}
+#gostack:hover{
+    border: 2px solid #04D361;
+}
+
+.curso-img img{
+    width: 100%; /*imagem respeita o tamanho do pai: 800px*/
+}
