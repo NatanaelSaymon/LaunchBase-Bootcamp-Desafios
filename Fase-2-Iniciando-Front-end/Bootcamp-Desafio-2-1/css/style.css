@@ -45,7 +45,7 @@ header, .links, a:last-child{
 
 .container{
     min-height: 84vh;
-    background-image: url('/imagens/background-code.png');
+    background-image: url('../imagens/background-code.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -116,7 +116,7 @@ p {
 }
 
 .container-cursos{
-    background-image: url('/imagens/back.png');
+    background-image: url('../imagens/back.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -162,7 +162,7 @@ p {
 #starter:hover{
     border: 2px solid var(--color-efeito);
 }
-#launch:hover{
+#launchbase:hover{
     border: 2px solid #FD951F;
 }
 #gostack:hover{
@@ -171,4 +171,60 @@ p {
 
 .curso-img img{
     width: 100%; /*imagem respeita o tamanho do pai: 800px*/
+}
+
+/*=== MODAL ===*/
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    opacity: 0; /*deixa transparente*/
+    visibility: hidden; /*fica escondido*/
+}
+
+.modal{
+    position: relative;
+    background-color: #ffffff;
+    width: 70%;
+    height: 70%;
+    margin: 5vh auto;
+}
+
+.active-maximize{
+    position: relative;
+    background-color: #ffffff;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+}
+
+.modal .close-modal{
+    position: absolute;
+    color: #100F12;
+    right: 8px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal{
+    position: absolute;
+    color: #100F12;
+    right: 40px;
+    top: 3px;
+    cursor: pointer;
+}
+
+/*=== MODAL ACTIVE ===*/
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    position: absolute;
 }
