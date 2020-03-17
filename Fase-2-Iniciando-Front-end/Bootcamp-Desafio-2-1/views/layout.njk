@@ -2,7 +2,9 @@
 
 <html lang="pt-br">
     <head>
-        <title>Desafio 2-1 | Home</title>
+    {%block head%}
+        <title>Primeiro Servidor</title>
+    {%endblock%}
         <meta charset="utf-8">
         <link rel="stylesheet" href="/style.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
@@ -21,12 +23,9 @@
             </div>
         </header>
 
-        <div class="container">
-            <!--aqui vai uma imagem como background-->
-        </div>
+        {% block content %}{% endblock %}
 
-        <footer>
-            <a href="https://github.com/NatanaelSaymon" target="_blank">LaunchBase - Natanael Saymon</a>
-        </footer>
+        {% block footer %}{% endblock %}
+
     </body>
 </html>

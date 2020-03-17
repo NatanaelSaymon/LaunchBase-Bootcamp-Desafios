@@ -15,7 +15,7 @@ server.listen(5000,function(){
 })
 
 server.get("/",function(req, res){
-    return res.render("layout")
+    return res.render("index")
 })
 
 server.get("/courses",function(req, res){
@@ -25,6 +25,10 @@ server.get("/courses",function(req, res){
 server.get("/about",function(req, res){
     return res.render("about")
 })
+
+server.use(function(req, res) {
+    res.status(404).render("not-found");
+});
 
 nunjucks.configure("views", {
     express:server
